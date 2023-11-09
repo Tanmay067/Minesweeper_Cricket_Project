@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function storevariables() {
+            const teamname1 = document.getElementById("teamname1").value;
+            const teamname2 = document.getElementById("teamname2").value;
+            const gridsize = document.getElementById("gridsize").value;
+            const teammembers = document.getElementById("teammembers").value;
+            window.location.href = `Game.html?teamname1=${teamname1}&teamname2=${teamname2}&gridsize=${gridsize}&teammembers=${teammembers}`;
+        }
+    </script>
+</head>
+
+<body>
+    <img src="Title1.png" alt="MinesweeperCricket">
+    <form id="input" onsubmit="event.preventDefault(); storevariables();">
+        <div class="center"> <label for="gridsize">Difficulty Level</label>
+            <br>
+            <select name="gridsize" id="gridsize">
+                <option value="10">Elementary[10x10]</option>
+                <option value="8">Intermediate[8x8]</option>
+                <option value="7">Master[7x7]</option>
+                <option value="6">Advanced[6x6]</option>
+            </select>
+        </div>
+        <br><br><br>
+        <div class="center">
+            <label for="teamname">Team-A</label>
+            <br>
+            <input type="text" id="teamname1" name="teamname1" placeholder="Enter your Team Name" required>
+        </div>
+        <br><br><br>
+        <div class="center">
+            <label for="teamname">Team-B</label>
+            <br>
+            <input type="text" id="teamname2" name="teamname2" placeholder="Enter your Team Name" required>
+        </div>
+        <br><br><br>
+        <div class="center"><label for="teammembers">Number of Team Members</label>
+            <br>
+            <select name="teammembers" id="teammembers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <br><br><br><br>
+        <button id="start" type="submit" onclick="storevariables()">Start the Game</button>
+    </form>
+</body>
+
+</html>

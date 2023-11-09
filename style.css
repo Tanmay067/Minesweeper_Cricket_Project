@@ -1,0 +1,186 @@
+html, body {
+    height: 0;
+    background-image: url(/back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+  }
+
+
+
+#grid {
+    margin: 30px auto;
+    width: 600px;
+    height: 600px;
+    border-color: black;
+    float: left;
+    margin-left: 620px;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aqua;
+}
+
+#score {
+    
+    float: right;
+    font-size: 30px;
+}
+
+#grid td {
+    background-color: #39b883;
+    border: 1px solid rgb(42, 7, 67);
+    cursor: pointer;
+    grid-area: 19600px;
+}
+
+#grid td:hover {
+    background-image: url(/cricket_bat.png);
+    background-size: contain;
+    background-size: 20px 20px auto;
+    background-repeat: no-repeat;
+}
+
+#card1 {
+    position: relative;
+    height: 400px;
+    width: 200px;
+    border-color: black;
+    float: left;
+    margin-right: 1600px;
+    margin-top: -500px;
+}
+
+#card1 td {
+    height: 80px;
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #14e989;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    grid-area: 19600px;
+}
+
+#card2 {
+    position: relative;
+  height: 400px;
+  width: 200px;
+  border-color: rgb(255, 255, 255);
+  float: right;
+  margin-right: 0px;
+  margin-top: -500px;
+}
+
+#card2 td {
+  height: 80px;
+  width: 140px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #14e989;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  grid-area: 19600px;
+}
+
+#teamscore1 {
+    position: absolute;
+    width:500px;
+    font-size: 50px;
+    margin-left:10px;
+    text-align: left;
+    color: #ffffff;
+    border:2px solid #ffffff;
+    border-radius: 5px;
+}
+
+#teamscore2 {
+    position:relative;
+  float: right;
+  width:50vh;
+  max-width: 30%;
+  font-size: 50px;
+  margin-top: 0px;
+  color: #ffffff;
+  border:2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.revealed1 {
+    background-image: url('/1.jpeg');
+    background-size: contain;
+}
+
+.revealed2 {
+    background-image: url('/2.jpeg');
+    background-size: contain;
+}
+
+.revealed4 {
+    background-image: url('/4.jpeg');
+    background-size: contain;
+}
+
+.revealed6 {
+    background-image: url('/6.jpeg');
+    background-size: contain;
+}
+
+#play-again {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #B49763;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+#play-again:hover {
+    background-color: #a06c45;
+}
+
+.fielder {
+    background-image: url(/fielder.jpg);
+    background-size: contain;
+    border-radius: 5px;
+}
+
+#target {
+    float: right;
+    font-size: 30px;
+}
+
+#New-game {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    background-image: url("Play.png");
+    background-size: cover;
+    color: black;
+    border: 2px solid black;
+    /* Add "1px solid" to specify the border style */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -350px;
+    margin-top: 620px;
+}
+
+
+#New-game:hover {
+    background-color: #ff8c00;
+}
